@@ -42,7 +42,7 @@ public class Simulator {
                 sb.append(simulation.getResultInPlainText()).append("\n").toString();
             });
             String elapstedTime = formatInterval(System.currentTimeMillis() - start);
-            logger.log(Level.INFO, new StringBuffer("completed in ").append(elapstedTime));
+            logger.log(Level.INFO, new StringBuffer("completed in ").append(elapstedTime).append(" seconds"));
             logger.log(Level.INFO, sb.toString());
             reader.close();
             return;
